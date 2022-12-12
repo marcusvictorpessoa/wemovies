@@ -1,12 +1,13 @@
 import { CartContextProvider } from "./hooks/useCart";
 import { Router } from "./router";
+import { AppContainer } from "./styles";
 
 export function App() {
   return (
-    <div className="app-container">
+    <AppContainer>
       <CartContextProvider>
         <Router />
       </CartContextProvider>
-    </div>
+    </AppContainer>
   );
 }
